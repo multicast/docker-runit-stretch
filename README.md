@@ -43,7 +43,7 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  adduser                    3.115                          all          add and remove users and groups
     ii  apt                        1.4.9                          amd64        commandline package manager
     ii  apt-utils                  1.4.9                          amd64        package management related utility programs
-    ii  base-files                 9.9+deb9u9                     amd64        Debian base system miscellaneous files
+    ii  base-files                 9.9+deb9u11                    amd64        Debian base system miscellaneous files
     ii  base-passwd                3.5.43                         amd64        Debian base system master password and group files
     ii  bash                       4.4-5                          amd64        GNU Bourne Again SHell
     ii  bsdutils                   1:2.29.2-1+deb9u1              amd64        basic utilities from 4.4BSD-Lite
@@ -53,14 +53,14 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  curl                       7.52.1-5+deb9u9                amd64        command line tool for transferring data with URL syntax
     ii  dash                       0.5.8-2.4                      amd64        POSIX-compliant shell
     ii  debconf                    1.5.61                         all          Debian configuration management system
-    ii  debian-archive-keyring     2017.5                         all          GnuPG archive keys of the Debian archive
+    ii  debian-archive-keyring     2017.5+deb9u1                  all          GnuPG archive keys of the Debian archive
     ii  debianutils                4.8.1.1                        amd64        Miscellaneous utilities specific to Debian
     ii  di                         4.34-2+b1                      amd64        advanced df like disk information utility
     ii  diffutils                  1:3.5-3                        amd64        File comparison utilities
     ii  dpkg                       1.18.25                        amd64        Debian package management system
     ii  dumb-init                  1.2.0-1                        amd64        wrapper script which proxies signals to a child
-    ii  e2fslibs:amd64             1.43.4-2                       amd64        ext2/ext3/ext4 file system libraries
-    ii  e2fsprogs                  1.43.4-2                       amd64        ext2/ext3/ext4 file system utilities
+    ii  e2fslibs:amd64             1.43.4-2+deb9u1                amd64        ext2/ext3/ext4 file system libraries
+    ii  e2fsprogs                  1.43.4-2+deb9u1                amd64        ext2/ext3/ext4 file system utilities
     ii  etckeeper                  1.18.5-1                       all          store /etc in git, mercurial, bzr or darcs
     ii  findutils                  4.6.0+git+20161106-2           amd64        utilities for finding files--find, xargs
     ii  gcc-6-base:amd64           6.3.0-18+deb9u1                amd64        GCC, the GNU Compiler Collection (base package)
@@ -85,13 +85,13 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  libc-l10n                  2.24-11+deb9u4                 all          GNU C Library: localization files
     ii  libc6:amd64                2.24-11+deb9u4                 amd64        GNU C Library: Shared libraries
     ii  libcap-ng0:amd64           0.7.7-3+b1                     amd64        An alternate POSIX capabilities library
-    ii  libcomerr2:amd64           1.43.4-2                       amd64        common error description library
+    ii  libcomerr2:amd64           1.43.4-2+deb9u1                amd64        common error description library
     ii  libcurl3:amd64             7.52.1-5+deb9u9                amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
     ii  libcurl3-gnutls:amd64      7.52.1-5+deb9u9                amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
     ii  libdb5.3:amd64             5.3.28-12+deb9u1               amd64        Berkeley v5.3 Database Libraries [runtime]
     ii  libdebconfclient0:amd64    0.227                          amd64        Debian Configuration Management System (C-implementation library)
     ii  liberror-perl              0.17024-1                      all          Perl module for error/exception handling in an OO-ish way
-    ii  libexpat1:amd64            2.2.0-2+deb9u1                 amd64        XML parsing C library - runtime library
+    ii  libexpat1:amd64            2.2.0-2+deb9u3                 amd64        XML parsing C library - runtime library
     ii  libfdisk1:amd64            2.29.2-1+deb9u1                amd64        fdisk partitioning library
     ii  libffi6:amd64              3.2.1-6                        amd64        Foreign Function Interface library runtime
     ii  libgcc1:amd64              1:6.3.0-18+deb9u1              amd64        GCC support library
@@ -108,8 +108,8 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  libkeyutils1:amd64         1.5.9-9                        amd64        Linux Key Management Utilities (library)
     ii  libkrb5-3:amd64            1.15-1+deb9u1                  amd64        MIT Kerberos runtime libraries
     ii  libkrb5support0:amd64      1.15-1+deb9u1                  amd64        MIT Kerberos runtime libraries - Support library
-    ii  libldap-2.4-2:amd64        2.4.44+dfsg-5+deb9u2           amd64        OpenLDAP libraries
-    ii  libldap-common             2.4.44+dfsg-5+deb9u2           all          OpenLDAP common files for libraries
+    ii  libldap-2.4-2:amd64        2.4.44+dfsg-5+deb9u3           amd64        OpenLDAP libraries
+    ii  libldap-common             2.4.44+dfsg-5+deb9u3           all          OpenLDAP common files for libraries
     ii  liblz4-1:amd64             0.0~r131-2+b1                  amd64        Fast LZ compression algorithm library - runtime
     ii  liblzma5:amd64             5.2.2-1.2+b1                   amd64        XZ-format compression library
     ii  libmount1:amd64            2.29.2-1+deb9u1                amd64        device mounting library
@@ -117,7 +117,7 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  libncursesw5:amd64         6.0+20161126-1+deb9u2          amd64        shared libraries for terminal handling (wide character support)
     ii  libnettle6:amd64           3.3-1+b2                       amd64        low level cryptographic library (symmetric and one-way cryptos)
     ii  libnewt0.52:amd64          0.52.19-1+b1                   amd64        Not Erik's Windowing Toolkit - text mode windowing with slang
-    ii  libnghttp2-14:amd64        1.18.1-1                       amd64        library implementing HTTP/2 protocol (shared library)
+    ii  libnghttp2-14:amd64        1.18.1-1+deb9u1                amd64        library implementing HTTP/2 protocol (shared library)
     ii  libp11-kit0:amd64          0.23.3-2                       amd64        library for loading and coordinating access to PKCS#11 modules - runtime
     ii  libpam-modules:amd64       1.1.8-3.6                      amd64        Pluggable Authentication Modules for PAM
     ii  libpam-modules-bin         1.1.8-3.6                      amd64        Pluggable Authentication Modules for PAM - helper binaries
@@ -142,15 +142,15 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  libslang2:amd64            2.3.1-5                        amd64        S-Lang programming library - runtime version
     ii  libsmartcols1:amd64        2.29.2-1+deb9u1                amd64        smart column output alignment library
     ii  libsqlite3-0:amd64         3.16.2-5+deb9u1                amd64        SQLite 3 shared library
-    ii  libss2:amd64               1.43.4-2                       amd64        command-line interface parsing library
+    ii  libss2:amd64               1.43.4-2+deb9u1                amd64        command-line interface parsing library
     ii  libssh2-1:amd64            1.7.0-1+deb9u1                 amd64        SSH2 client-side library
-    ii  libssl1.0.2:amd64          1.0.2r-1~deb9u1                amd64        Secure Sockets Layer toolkit - shared libraries
-    ii  libssl1.1:amd64            1.1.0j-1~deb9u1                amd64        Secure Sockets Layer toolkit - shared libraries
+    ii  libssl1.0.2:amd64          1.0.2s-1~deb9u1                amd64        Secure Sockets Layer toolkit - shared libraries
+    ii  libssl1.1:amd64            1.1.0k-1~deb9u1                amd64        Secure Sockets Layer toolkit - shared libraries
     ii  libstdc++6:amd64           6.3.0-18+deb9u1                amd64        GNU Standard C++ Library v3
-    ii  libsystemd0:amd64          232-25+deb9u11                 amd64        systemd utility library
+    ii  libsystemd0:amd64          232-25+deb9u12                 amd64        systemd utility library
     ii  libtasn1-6:amd64           4.10-1.1+deb9u1                amd64        Manage ASN.1 structures (runtime)
     ii  libtinfo5:amd64            6.0+20161126-1+deb9u2          amd64        shared low-level terminfo library for terminal handling
-    ii  libudev1:amd64             232-25+deb9u11                 amd64        libudev shared library
+    ii  libudev1:amd64             232-25+deb9u12                 amd64        libudev shared library
     ii  libunistring0:amd64        0.9.6+really0.9.3-0.1          amd64        Unicode string library for C
     ii  libustr-1.0-1:amd64        1.0.4-6                        amd64        Micro string library: shared library
     ii  libuuid1:amd64             2.29.2-1+deb9u1                amd64        Universally Unique ID library
@@ -165,7 +165,7 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  ncurses-base               6.0+20161126-1+deb9u2          all          basic terminal type definitions
     ii  ncurses-bin                6.0+20161126-1+deb9u2          amd64        terminal-related programs and man pages
     ii  net-tools                  1.60+git20161116.90da8a0-1     amd64        NET-3 networking toolkit
-    ii  openssl                    1.1.0j-1~deb9u1                amd64        Secure Sockets Layer toolkit - cryptographic utility
+    ii  openssl                    1.1.0k-1~deb9u1                amd64        Secure Sockets Layer toolkit - cryptographic utility
     ii  passwd                     1:4.4-4.1                      amd64        change and administer password and group data
     ii  perl                       5.24.1-3+deb9u5                amd64        Larry Wall's Practical Extraction and Report Language
     ii  perl-base                  5.24.1-3+deb9u5                amd64        minimal Perl system
@@ -182,9 +182,9 @@ The same as the parent image [mkovac/base-stretch](https://hub.docker.com/r/mkov
     ii  sensible-utils             0.0.9+deb9u1                   all          Utilities for sensible alternative selection
     ii  sysvinit-utils             2.88dsf-59.9                   amd64        System-V-like utilities
     ii  tar                        1.29b-1.1                      amd64        GNU version of the tar archiving utility
-    ii  tzdata                     2019a-0+deb9u1                 all          time zone and daylight-saving time data
+    ii  tzdata                     2019c-0+deb9u1                 all          time zone and daylight-saving time data
     ii  ucf                        3.0036                         all          Update Configuration File(s): preserve user changes to config files
-    ii  unzip                      6.0-21+deb9u1                  amd64        De-archiver for .zip files
+    ii  unzip                      6.0-21+deb9u2                  amd64        De-archiver for .zip files
     ii  util-linux                 2.29.2-1+deb9u1                amd64        miscellaneous system utilities
     ii  whiptail                   0.52.19-1+b1                   amd64        Displays user-friendly dialog boxes from shell scripts
     ii  xtail                      2.1-5.1+b1                     amd64        like "tail -f", but works on truncated files, directories, more

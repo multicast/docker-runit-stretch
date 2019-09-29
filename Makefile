@@ -4,7 +4,8 @@
 ifndef NAMESPACE
 NAMESPACE = mkovac
 endif
-NAME = ${NAMESPACE}/$(shell basename $(shell readlink -e . ) )
+IMAGE := $(shell basename $(shell readlink -e . ) )
+NAME = ${NAMESPACE}/${IMAGE}
 VERSION = $(shell date +%Y%m%d)
 
 .PHONY: all
@@ -29,7 +30,8 @@ latest: build
 	diff dpkg-new.txt dpkg.txt 2>&1 >/dev/null && { \
 	  docker image rm $(NAME):$(VERSION); \
 	} || { \
-	  ( sed -e s/=NAMESPACE=/${NAMESPACE}/g README.in; \
+	  ( sed -e s/=NAMESPACE=/${NAMESPACE}/g \
+	        -e s/=IMAGE=/${IMAGE}/g README.in; \
 	    sed -e 's/^/    /' dpkg-new.txt ) > README.md; \
 	  git add README.md; \
 	  git commit -nm "package updates on  ${VERSION}"; \
